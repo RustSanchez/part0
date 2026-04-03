@@ -1,0 +1,10 @@
+sequenceDiagram
+    participant browser
+	  participant server
+	
+	  browser->>server: Saves note: POST request https://studies.cs.helsinki.fi/exampleapp/new_note
+	  server-->>browser: server asks the browser to perform a new HTTP GET request
+	  the browser reloads the Notes page
+	  browser->>server: fetching main.css
+	  browser->>server: fetching main.js
+	  browser->>server: fetching data.json
