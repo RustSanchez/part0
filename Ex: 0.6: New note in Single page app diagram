@@ -1,0 +1,6 @@
+sequenceDiagram
+    participant browser
+    participant server
+    
+    browser->>server: post https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+    server-->>browser: rerenders the note list on the page
